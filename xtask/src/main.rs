@@ -8,8 +8,9 @@
 //! See [cargo-xtask](https://github.com/matklad/cargo-xtask)
 
 // extern crate helperes as h;
+extern crate helperes_proc as hproc;
 // use ::h            	::*; // gets macros :: prefix needed due to proc macro expansion
-pub use helper_proc   	::*; // gets proc macros
+pub use hproc         	::*; // gets proc macros
 // pub use ::h::alias 	::*;
 // pub use ::h::helper	::*;
 
