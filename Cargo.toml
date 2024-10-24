@@ -1,32 +1,23 @@
 [package]  # help on keys doc.rust-lang.org/cargo/reference/manifest.html
-name   	= "dummy"
-version	= "0.1.0"
-authors	= ["{{authors}}"]
-edition	= "2021"
-build  	= "build.rs"
+name       	= "helper_proc"
+description	= "Helper proc functions that can be shared between the main crate as well as the build script (proc macros should be in a separate crate)"
+version    	= "0.1.0"
+authors    	= ["{{authors}}"]
+edition    	= "2021"
+license    	= "MIT"
+build      	= "build.rs"
 
 [workspace]
-members = ["./","helper","helper_proc","xtask"]	# relative to the workspace root
-
-[[bin]]
-name	= "dummy_bin"
-path	= "src/dummy.bin.rs"
+members = ["./","xtask"]	# relative to the workspace root
 
 [lib]
-name      	= "dummy_lib"
-path      	= "src/dummy.lib.rs"
-crate-type	= ['lib','cdylib']
+name      	= "helper_proc"
+path      	= "src/[helper_proc].rs"
+proc-macro	= true
 
-[dependencies]
-helper     	= {path="helper"}
-helper_proc	= {path="helper_proc"}
-log        	= "0.4"
-stderrlog  	= "0.5"
-anyhow     	= "1.0"
-faccess    	= "0.2"
+# [dependencies]
 
-[build-dependencies]
-log	= "0.4"
+# [build-dependencies]
 
 [profile.release]
 # opt        	for      	size
