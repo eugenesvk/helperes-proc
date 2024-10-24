@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file
 
-[unreleased]: https://github.com/eugenesvk/helperes-proc/compare/0.1.0...HEAD
+[unreleased]: https://github.com/eugenesvk/helperes-proc/compare/0.2.0...HEAD
 ## [Unreleased]
 <!-- - __Added__ -->
   <!-- + :sparkles:  -->
@@ -22,6 +22,8 @@ All notable changes to this project will be documented in this file
   <!-- + :lock:  -->
   <!-- vulnerabilities -->
 
+[0.2.0]: https://github.com/eugenesvk/helperes-proc/releases/tag/0.2.0
+## [0.2.0]
 - __Added__
   + ✨ `AsStr` derive proc macro to get struct's name as static string, and impl a similar trait
 

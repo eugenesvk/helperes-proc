@@ -1,7 +1,7 @@
 [package]  # help on keys doc.rust-lang.org/cargo/reference/manifest.html
 name       	= "helperes_proc"
 description	= "Helper proc functions that can be shared between the main crate as well as the build script (proc macros should be in a separate crate)"
-version    	= "0.1.0"
+version    	= "0.2.0"
 authors    	= ["{{authors}}"]
 edition    	= "2021"
 license    	= "MIT"
