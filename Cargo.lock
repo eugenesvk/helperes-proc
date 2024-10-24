@@ -85,18 +85,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "06ea2b9bc92be3c2baa9334a323ebca2d6f074ff852cd1d7b11064035cd3868f"
 
 [[package]]
-name = "dummy"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "faccess",
- "helper",
- "helper_proc",
- "log",
- "stderrlog",
-]
-
-[[package]]
 name = "faccess"
 version = "0.2.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -108,15 +96,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "helper"
-version = "0.1.0"
-
-[[package]]
 name = "helper_proc"
 version = "0.1.0"
-dependencies = [
- "helper",
-]
 
 [[package]]
 name = "hermit-abi"
@@ -431,9 +412,7 @@ name = "xtask"
 version = "0.1.0"
 dependencies = [
  "anyhow",
- "dummy",
  "faccess",
- "helper",
  "helper_proc",
  "indoc",
  "log",
