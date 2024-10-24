@@ -7,11 +7,11 @@
 //! It's integrated into the `cargo` command line by using an alias in `.cargo/config`<br>
 //! See [cargo-xtask](https://github.com/matklad/cargo-xtask)
 
-extern crate helper;
-use ::helper            	::*; // gets macros :: prefix needed due to proc macro expansion
-pub use helper_proc     	::*; // gets proc macros
-pub use ::helper::alias 	::*;
-pub use ::helper::helper	::*;
+// extern crate helperes as h;
+// use ::h            	::*; // gets macros :: prefix needed due to proc macro expansion
+pub use helper_proc   	::*; // gets proc macros
+// pub use ::h::alias 	::*;
+// pub use ::h::helper	::*;
 
 use anyhow::{Result,Context,bail};
 use std  	::{env,fs,
@@ -23,10 +23,9 @@ use std  	::{env,fs,
 fn main() -> anyhow::Result<()> {
   try_main()
 }
-use dummy_lib::*;
 fn try_main() -> anyhow::Result<()> {
   let task = env::args().nth(1);
-  p!("task_arg1 = {:?} lib = {:?}", task, dummy_lib::lib());
+  // p!("task_arg1 = {:?}", task);
   match task {
     None           	=> tasks::print_help(),
     Some(t)        	=> match t.as_str() {
@@ -52,7 +51,7 @@ pub mod tasks {
         docgen     \tGenerate files to be included somewhere
         query-check\tCheck the validity of some queries"
     );
-    pe!("{}", help_out);
+    // pe!("{}", help_out);
   }
 }
 
