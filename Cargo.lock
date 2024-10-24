@@ -96,7 +96,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "helper_proc"
+name = "helperes_proc"
 version = "0.1.0"
 
 [[package]]
@@ -413,7 +413,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "faccess",
- "helper_proc",
+ "helperes_proc",
  "indoc",
  "log",
  "stderrlog",
