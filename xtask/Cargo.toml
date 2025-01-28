@@ -6,7 +6,8 @@ edition	= "2021"
 [dependencies]
 helperes_proc	= {path= "..", default-features=false}
 log          	= "0.4"
-stderrlog    	= "0.5"
+# stderrlog  	= "0.6"
+stderrlog    	= {git="https://github.com/eugenesvk/stderrlog-rs"}
 anyhow       	= "1.0"
 faccess      	= "0.2"
 indoc        	= {version="2.0.4"}
